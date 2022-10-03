@@ -1,43 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Fontawesome link -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
-    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" 
-    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
     <link rel="stylesheet" href="/assets/css/style.css">
     <title>Rock Paper Scissors Lizard Spock</title>
 </head>
+
 <body>
     <header>
         <a href="index.html">
-        <h1 id="logo"><i class="fa-regular fa-hand-back-fist"></i>Rock, Paper, Scissors, Lizard, Spock!</h1>
-    </a>
-    <nav id="menu">
-        <ul>
-            <li>
-            <a href="index.html" class="active">Game</a>
-        </li>
-            <li>
-                <a href="rules.html">Rules</a>
-            </li>
-        </ul>
-    </nav>
+            <h1 id="logo"><i class="fas fa-hand-rock"></i>
+                Rock, Paper, Scissors, Lizard, Spock!
+            </h1>
+        </a>
+        <nav id="menu">
+            <ul>
+                <li>
+                    <a href="index.html" class="active">Play!</a>
+                </li>
+                <li>
+                    <a href="rules.html">Rules</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <div class="game-zone">
+        <div class="user-selection-zone">
+            <button class="user-button">
+                <i class="fas fa-hand-rock"></i>
+            </button>
+            <button class="user-button">
+                <i class="fas fa-hand-paper"></i>
+            </button>
+            <button class="user-button">
+                <i class="fas fa-hand-scissors"></i>
+            </button>
+            <button class="user-button">
+                <i class="fas fa-hand-lizard"></i>
+            </button>
+            <button class="user-button">
+                <i class="fas fa-hand-spock"></i>
+            </button>
+        </div>
 
+        <div class="battle-area">
+            <span id="user-selection">0</span>
+            <span>vs</span>
+            <span id="computer-selection">0</span>
+        </div>
+
+        <button class="play-button">Let's Play!</button>
     </div>
 
-    <div class="score-tally">
-        
+    <div class="score-tally-zone">
+        <p class="scores">Wins <span id="wins"></span>0</p>
+        <p class="scores">Draws <span id="draws"></span>0</p>
+        <p class="scores">Losses <span id="losses"></span>0</p>
     </div>
-   
+
     <script src="/assets/js/script.js"></script>
 </body>
+
 </html>
