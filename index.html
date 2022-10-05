@@ -36,7 +36,7 @@
     <div class="game-zone">
         <div class="user-selection-zone">
             <div class="button-container">
-                <button data-type="Rock" class="user-button">
+                <button data-type="Rock" onclick="document.getElementById('user-selection').innerHTML" = "Rock" class="user-button">
                     <i class="fas fa-hand-rock"></i>
                 </button>
             </div>
@@ -63,7 +63,7 @@
         </div>
 
         <div class="battle-area">
-            <span id="user-selection" class="button-container">0</span>
+            <span id="user-selection" class="button-container">Rock</span>
             <span>vs</span>
             <span id="computer-selection" class="button-container">0</span>
         </div>
