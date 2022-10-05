@@ -28,6 +28,16 @@ function runGame() {
             console.log(userShape);
         }); 
         }
+
+        updateUserSelection();
+}
+
+/**
+ * Updates the class to display the corresponding icon
+ * reflecting the user's choice
+ */
+function updateUserSelection() {
+
 }
 
 /**
@@ -39,7 +49,7 @@ function computerChoice() {
 
     let handShapes = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
     let computerShape = handShapes[Math.floor(Math.random() * 5)];
-    alert(computerShape);
+    console.log(computerShape);
     return computerShape;    
 }
 
@@ -47,7 +57,7 @@ function computerChoice() {
  * Displays the user and computer choices to the 
  * battle area
  */
-function displayBattle(userSelection,computerSelection) {
+function displayBattle() {
 
     document.getElementById('user-selection').textContent = userSelection;
     document.getElementById('computer-selection').textContent = computerSelection;
@@ -73,7 +83,7 @@ function determineWinner() {
     compSpan.textContent = computerAnswer ;
 
     if (userAnswer === computerAnswer){
-        alert("It's a draw!");
+        alert(`It's a draw! You both chose ${userAnswer}`);
         incrementDraws();
     } else if (userAnswer === "Rock" && computerAnswer === ("Scissors" || "Lizard") ||
     userAnswer === "Paper" && computerAnswer === ("Rock" || "Spock") ||
@@ -91,14 +101,26 @@ function determineWinner() {
 
 //function checkAnswer() {}
 
+/**
+ * increments user wins by 1 if victorious
+ */
 function incrementWins() {
-
+    let oldWins = parseInt(document.getElementById('wins').innerText);
+    document.getElementById('wins').innerText = ++ oldWins;
 }
 
+/**
+ * increments draw tally by 1 if result is a tie
+ */
 function incrementDraws() {
-
+    let oldDraws = parseInt(document.getElementById('draws').innerText);
+    document.getElementById('draws').innerText = ++ oldDraws;
 }
 
+/**
+ * increments loss tally by 1 if computer wins
+ */
 function incrementLosses() {
-
+    let oldLosses = parseInt(document.getElementById('losses').innerText);
+    document.getElementById('losses').innerText = ++ oldLosses;
 }
