@@ -66,15 +66,21 @@ header>a {
     display: inline-block;
     height: 120px;
     width: 120px;
-    border: 1px solid #054E57;
+    border: 2px solid #054E57;
+    border-radius: 5px;
     margin: 10px 30px;
+}
+
+.button-container:hover {
+    color: peru;
+    border-color: peru;
 }
 
 .user-button {
     font-size: 500%;
-    color: #054E57;
+    color: inherit;
     margin: 0 auto;
-    padding: 5px;
+    padding: 11%;
     /*margin: 10px 30px;
     border: 1px solid #054E57;*/
 }
@@ -84,14 +90,30 @@ header>a {
     font-size: 0.5rem;
     color: #054E57;
     position: relative;
+}*/
+
+.play-button {
+    border: 2px solid #054E57;
+    border-radius: 5px;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    padding: 5px;
+}    
+
+.play-button:hover {
+    border-color: mediumseagreen;
+    color: mediumseagreen;
 }
 
 .battle-area {
+    height: 200px;
     margin: 0 auto;
-}*/
+}
 
 .score-tally-zone {
     width: 100%;
+    height: 100px;
+    margin-top: 70px;
     text-align: center;
 }
 
