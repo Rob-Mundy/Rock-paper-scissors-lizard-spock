@@ -40,9 +40,7 @@ function computerChoice() {
     let handShapes = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
     let computerShape = handShapes[Math.floor(Math.random() * 5)];
     alert(computerShape);
-    let compSpan = document.getElementById('computer-selection');
-    compSpan.textContent = computerShape ;
-    
+    return computerShape;    
 }
 
 /**
@@ -51,8 +49,8 @@ function computerChoice() {
  */
 function displayBattle(userSelection,computerSelection) {
 
-    document.getElementById('userSelection').textContent = userSelection;
-    document.getElementById('computerSelection').textContent = computerSelection;
+    document.getElementById('user-selection').textContent = userSelection;
+    document.getElementById('computer-selection').textContent = computerSelection;
 }
 
 /**
@@ -61,12 +59,18 @@ function displayBattle(userSelection,computerSelection) {
  */
 function determineWinner() {
 
-    //document.getElementById('user-selection').textContent = !0;
     let userSpan = document.getElementById('user-selection');
     let userAnswer = userSpan.textContent;
+
+    if(userAnswer === "") {
+        alert('Please choose a shape!')
+    } else {
     console.log(`User chose: ${userAnswer}`);
     let computerAnswer = computerChoice();
     console.log(`Computer chose: ${computerAnswer}`)
+
+    let compSpan = document.getElementById('computer-selection');
+    compSpan.textContent = computerAnswer ;
 
     if (userAnswer === computerAnswer){
         alert("It's a draw!");
@@ -82,6 +86,7 @@ function determineWinner() {
         alert(`You lose! ${computerAnswer} defeats ${userAnswer}`);
         incrementLosses();
     }
+}
 }
 
 //function checkAnswer() {}
