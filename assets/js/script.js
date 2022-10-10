@@ -85,6 +85,7 @@ function determineWinner() {
     if (userAnswer === computerAnswer){
         alert(`It's a draw! You both chose ${userAnswer}`);
         incrementDraws();
+        incrementAll();
     } else if (userAnswer === "Rock" && computerAnswer === ("Scissors" || "Lizard") ||
     userAnswer === "Paper" && computerAnswer === ("Rock" || "Spock") ||
     userAnswer === "Scissors" && computerAnswer === ("Paper" || "Lizard") ||
@@ -92,9 +93,11 @@ function determineWinner() {
     userAnswer === "Spock" && computerAnswer === ("Rock" || "Scissors")) {
     alert(`You win! ${userAnswer} defeats ${computerAnswer}`);
     incrementWins();
+    incrementAll();
     } else {
         alert(`You lose! ${computerAnswer} defeats ${userAnswer}`);
         incrementLosses();
+        incrementAll()
     }
 }
 }
@@ -107,6 +110,9 @@ function determineWinner() {
 function incrementWins() {
     let oldWins = parseInt(document.getElementById('wins').innerText);
     document.getElementById('wins').innerText = ++ oldWins;
+    if(oldWins === 3) {
+        alert("You win the best of 5!")
+    }
 }
 
 /**
@@ -123,4 +129,18 @@ function incrementDraws() {
 function incrementLosses() {
     let oldLosses = parseInt(document.getElementById('losses').innerText);
     document.getElementById('losses').innerText = ++ oldLosses;
+    if(oldLosses === 3) {
+        alert("You lose the best of 5!")
+    }
+}
+
+function incrementAll() {
+    let currentScore = parseInt(document.getElementById('losses').innerText) +
+    parseInt(document.getElementById('wins').innerText) + 
+    parseInt(document.getElementById('draws').innerText);
+    console.log(currentScore);
+    /*if(currentScore === 5) {
+        alert('The best of 5 is tied!');
+    }*/
+
 }
