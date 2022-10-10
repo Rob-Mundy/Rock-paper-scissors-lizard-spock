@@ -107,21 +107,20 @@ header>a {
 
 .battle-area {
     height: 200px;
-    margin: 0 auto;
 }
 
 .battle-area>
 span {
     position: relative;
-    top: -3.5em;
-
+    font-size: 2em;
+    display: block;
 }
 
-.battle-area>
+/*.battle-area>
 .button-container {
     position: relative;
     top: 1em;
-}
+}*/
 
 .score-tally-zone {
     width: 100%;
