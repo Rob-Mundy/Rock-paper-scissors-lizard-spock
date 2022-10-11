@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
+    resetPage();
     let buttons = document.getElementsByTagName("button");
     
     for(let button of buttons) {
@@ -74,7 +75,7 @@ function determineWinner() {
     let userSpan = document.getElementById('user-selection');
     let userAnswer = userSpan.textContent;
 
-    if(userAnswer === "") {
+    if(userAnswer === "?") {
         alert('Please choose a shape!')
     } else {
     console.log(`User chose: ${userAnswer}`);
@@ -161,8 +162,8 @@ function resetPage() {
         let playButton = document.getElementsByClassName('play-button')[0];
         playButton.style.display="inline-block";
         
-        document.getElementById('computer-selection').textContent = '';
-        document.getElementById('user-selection').textContent = '';
+        document.getElementById('computer-selection').textContent = '?';
+        document.getElementById('user-selection').textContent = '?';
 }
 
 /*function incrementAll() {
