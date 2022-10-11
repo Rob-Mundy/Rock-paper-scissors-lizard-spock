@@ -6,8 +6,10 @@ document.addEventListener("DOMContentLoaded", function() {
             if(this.getAttribute("data-type") === "submit") {
                determineWinner();
             } else {
-                let userSelection = this.getAttribute("data-type");
+                resetPage();
+                /*let userSelection = this.getAttribute("data-type");
                 alert(`You selected ${userSelection}`)
+                document.getElementsByTagName('computer-selection') = '';*/
             }
         })
     }
@@ -85,7 +87,7 @@ function determineWinner() {
     if (userAnswer === computerAnswer){
         alert(`It's a draw! You both chose ${userAnswer}`);
         incrementDraws();
-        incrementAll();
+        /*incrementAll();*/
     } else if (userAnswer === "Rock" && computerAnswer === ("Scissors" || "Lizard") ||
     userAnswer === "Paper" && computerAnswer === ("Rock" || "Spock") ||
     userAnswer === "Scissors" && computerAnswer === ("Paper" || "Lizard") ||
@@ -93,13 +95,13 @@ function determineWinner() {
     userAnswer === "Spock" && computerAnswer === ("Rock" || "Scissors")) {
     alert(`You win! ${userAnswer} defeats ${computerAnswer}`);
     incrementWins();
-    incrementAll();
+    /*incrementAll();*/
     } else {
         alert(`You lose! ${computerAnswer} defeats ${userAnswer}`);
         incrementLosses();
-        incrementAll()
+        /*incrementAll()*/
     }
-}
+} hidePlay();
 }
 
 //function checkAnswer() {}
@@ -110,8 +112,9 @@ function determineWinner() {
 function incrementWins() {
     let oldWins = parseInt(document.getElementById('wins').innerText);
     document.getElementById('wins').innerText = ++ oldWins;
-    if(oldWins === 3) {
-        alert("You win the best of 5!")
+    if(oldWins === 5) {
+        alert("You win the first to 5!")
+        location.reload();
     }
 }
 
@@ -129,18 +132,45 @@ function incrementDraws() {
 function incrementLosses() {
     let oldLosses = parseInt(document.getElementById('losses').innerText);
     document.getElementById('losses').innerText = ++ oldLosses;
-    if(oldLosses === 3) {
-        alert("You lose the best of 5!")
+    if(oldLosses === 5) {
+        alert("You lose the first to 5!")
+        location.reload();
     }
 }
 
-function incrementAll() {
+/**
+ * Hides 'Let's Play!' button and displays 'Play again?' button in its
+ * place.
+ */
+function hidePlay() {
+    let playButton = document.getElementsByClassName('play-button')[0];
+    playButton.style.display="none";
+
+    let playAgainButton = document.getElementsByClassName('play-again-button')[0];
+    playAgainButton.style.display = 'inline-block';
+}
+
+/**
+ * Resets user selection and computer selection.  Hides 'Play Again?' button and 
+ * displays Play button.
+ */
+function resetPage() {
+        let playAgainButton = document.getElementsByClassName('play-again-button')[0];
+        playAgainButton.style.display = 'none';
+
+        let playButton = document.getElementsByClassName('play-button')[0];
+        playButton.style.display="inline-block";
+        
+        document.getElementById('computer-selection').textContent = '';
+        document.getElementById('user-selection').textContent = '';
+}
+
+/*function incrementAll() {
     let currentScore = parseInt(document.getElementById('losses').innerText) +
     parseInt(document.getElementById('wins').innerText) + 
     parseInt(document.getElementById('draws').innerText);
     console.log(currentScore);
-    /*if(currentScore === 5) {
+    if(currentScore === 5) {
         alert('The best of 5 is tied!');
     }*/
 
-}
