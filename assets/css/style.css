@@ -104,8 +104,9 @@ header>a {
     padding: 5px;
 }    
 
-.play-button:hover {
-    border-color: gold;
+.play-button:hover,
+.play-again-button:hover {
+    background-color: #054E57;
     color: gold;
 }
 
