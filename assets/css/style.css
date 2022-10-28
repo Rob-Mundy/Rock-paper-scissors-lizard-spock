@@ -31,16 +31,17 @@ h2 {
 
 header a {
     text-decoration: none;
-    color: inherit;
+    color: #054E57;
 }
 
 header a:hover {
-    border-bottom: 1px solid #054E57;
+    font-weight: bold;
+    /*border-bottom: 1px solid;*/
 }
 
 header a.active {
-    /*border-bottom: 1px solid #054E57;*/
     font-weight: bold;
+    border-bottom: 1px solid;
 }
 
 #logo {
@@ -68,7 +69,7 @@ header a.active {
     text-align: center;
     /*margin: 0 auto;*/
     margin-top: 120px;
-    background-color: #8fbc8f;
+    background-color: #00C59F;
 }
 
 .user-selection-zone {
@@ -87,8 +88,8 @@ header a.active {
 }
 
 .button-container:hover {
-    color: gold;
-    border-color: gold;
+    color: #FF8D3E;
+    border-color: #FF8D3E;
 }
 
 .button-container:active {
@@ -122,7 +123,12 @@ header a.active {
 .play-button:hover,
 .play-again-button:hover {
     background-color: #054E57;
-    color: gold;
+    color: #FF8D3E;
+}
+
+.play-button:active,
+.play-again-button:active {
+    border: 2px dotted #FF8D3E;
 }
 
 .play-again-button {
