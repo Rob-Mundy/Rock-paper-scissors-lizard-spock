@@ -9,11 +9,11 @@ document.addEventListener("DOMContentLoaded", function () {
             } else {
                 resetPage();
             }
-        })
+        });
     }
 
     runGame();
-})
+});
 
 function runGame() {
 
@@ -30,14 +30,6 @@ function runGame() {
     }
 
     updateUserSelection();
-}
-
-/**
- * Updates the class to display the corresponding icon
- * reflecting the user's choice
- */
-function updateUserSelection() {
-
 }
 
 /**
@@ -73,11 +65,11 @@ function determineWinner() {
     let userAnswer = userSpan.textContent;
 
     if (userAnswer === "?") {
-        alert('Please choose a shape!')
+        alert('Please choose a shape!');
     } else {
         console.log(`User chose: ${userAnswer}`);
         let computerAnswer = computerChoice();
-        console.log(`Computer chose: ${computerAnswer}`)
+        console.log(`Computer chose: ${computerAnswer}`);
 
         let compSpan = document.getElementById('computer-selection');
         compSpan.textContent = computerAnswer;
@@ -107,7 +99,7 @@ function incrementWins() {
     let oldWins = parseInt(document.getElementById('wins').innerText);
     document.getElementById('wins').innerText = ++oldWins;
     if (oldWins === 5) {
-        alert("You win the first to 5!")
+        alert("You win the first to 5!");
         location.reload();
     }
 }
@@ -127,7 +119,7 @@ function incrementLosses() {
     let oldLosses = parseInt(document.getElementById('losses').innerText);
     document.getElementById('losses').innerText = ++oldLosses;
     if (oldLosses === 5) {
-        alert("You lose the first to 5!")
+        alert("You lose the first to 5!");
         location.reload();
     }
 }
