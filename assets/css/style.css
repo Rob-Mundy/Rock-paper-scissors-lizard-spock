@@ -201,6 +201,8 @@ header a.active {
     header {
         font-size: .6em;
         height: 80px;
+        width: 60%;
+        margin-left: 20%;
     }
 
     #menu {
