@@ -196,10 +196,16 @@ header a.active {
 
     .game-zone {
         font-size: .6em;
+        margin-top: 120px;
+    }
+
+    .user-selection-zone {
+        height: 150px;
     }
 
     .battle-area {
-        padding: 10px 0px 0px 0px
+        padding: 10px 0px 0px 0px;
+        height: 100px;
     }
 
     .button-container {
