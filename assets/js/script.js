@@ -28,8 +28,6 @@ function runGame() {
             console.log(userShape);
         });
     }
-
-    updateUserSelection();
 }
 
 /**
@@ -43,16 +41,6 @@ function computerChoice() {
     let computerShape = handShapes[Math.floor(Math.random() * 5)];
     console.log(computerShape);
     return computerShape;
-}
-
-/**
- * Displays the user and computer choices to the 
- * battle area
- */
-function displayBattle() {
-
-    document.getElementById('user-selection').textContent = userSelection;
-    document.getElementById('computer-selection').textContent = computerSelection;
 }
 
 /**
