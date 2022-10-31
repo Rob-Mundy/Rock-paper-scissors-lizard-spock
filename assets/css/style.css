@@ -132,6 +132,16 @@ header a.active {
     display: none;
 }
 
+.user-button[aria-label]:hover:after {
+    position: absolute;
+    color: inherit;
+    content: attr(aria-label);
+    font-size: 0.25em;
+    display: block;
+    line-height: 1em;
+    text-align: center;
+}
+
 /* Battle area (user & computer selections) */
 
 .battle-area {
