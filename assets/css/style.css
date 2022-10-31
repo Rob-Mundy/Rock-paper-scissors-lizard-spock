@@ -36,7 +36,6 @@ header a {
 
 header a:hover {
     font-weight: bold;
-    /*border-bottom: 1px solid;*/
 }
 
 header a.active {
@@ -64,10 +63,8 @@ header a.active {
 .game-zone {
     display: inline-block;
     height: 360px;
-    /*width: 75vw;*/
     width: 100%;
     text-align: center;
-    /*margin: 0 auto;*/
     margin-top: 120px;
     background-color: #00C59F;
 }
@@ -101,16 +98,7 @@ header a.active {
     color: inherit;
     margin: 0 auto;
     padding: 9%;
-    /*margin: 10px 30px;
-    border: 1px solid #054E57;*/
 }
-
-/*.user-button::after {
-    content: attr(data-type);
-    font-size: 0.5rem;
-    color: #054E57;
-    position: relative;
-}*/
 
 .play-button {
     border: 2px solid #054E57;
@@ -118,7 +106,7 @@ header a.active {
     font-size: 1.2em;
     letter-spacing: 2px;
     padding: 5px;
-}    
+}
 
 .play-button:hover,
 .play-again-button:hover {
@@ -146,20 +134,13 @@ header a.active {
     background-color: inherit;
 }
 
-.battle-area>
-span {
+.battle-area>span {
     position: relative;
     font-size: 2em;
     font-weight: bold;
     display: block;
     background-color: inherit;
 }
-
-/*.battle-area>
-.button-container {
-    position: relative;
-    top: 1em;
-}*/
 
 .score-tally-zone {
     width: 100%;
@@ -176,18 +157,46 @@ span {
 }
 
 @media screen and (max-width: 680px) {
-    header {height: 125px; width: 80%; margin-left: 10%;}
-    .game-zone {height: 450px; /*width: 80vw; margin: 120px 10% auto;*/ margin-top: 155px;}
-    .user-selection-zone {height: 200px; padding: auto 10px;/*margin: 0 20%*/}
+    header {
+        height: 125px;
+        width: 80%;
+        margin-left: 10%;
+    }
 
+    .game-zone {
+        height: 450px;
+        margin-top: 155px;
+    }
+
+    .user-selection-zone {
+        height: 200px;
+        padding: auto 10px;
+    }
 }
 
 @media screen and (max-width: 425px) {
-    header {font-size: .8em;/*height: 125px; width: 80%; margin-left: 10%;*/}
-    #menu {margin-top: 0}
-    .game-zone {font-size: .8em;}
-    .battle-area {padding: 10px 0px 0px 0px}
-    .button-container {height: 60px; width: 60px;}
-    .score-tally-zone {font-size: .8em;}
-    
+    header {
+        font-size: .8em;
+    }
+
+    #menu {
+        margin-top: 0
+    }
+
+    .game-zone {
+        font-size: .8em;
+    }
+
+    .battle-area {
+        padding: 10px 0px 0px 0px
+    }
+
+    .button-container {
+        height: 60px;
+        width: 60px;
+    }
+
+    .score-tally-zone {
+        font-size: .8em;
+    }
 }

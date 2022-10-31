@@ -1,16 +1,13 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     resetPage();
     let buttons = document.getElementsByTagName("button");
-    
-    for(let button of buttons) {
-        button.addEventListener("click", function() {
-            if(this.getAttribute("data-type") === "submit") {
-               determineWinner();
+
+    for (let button of buttons) {
+        button.addEventListener("click", function () {
+            if (this.getAttribute("data-type") === "submit") {
+                determineWinner();
             } else {
                 resetPage();
-                /*let userSelection = this.getAttribute("data-type");
-                alert(`You selected ${userSelection}`)
-                document.getElementsByTagName('computer-selection') = '';*/
             }
         })
     }
@@ -20,19 +17,19 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function runGame() {
 
-        let userShape;
-        let userSelection = document.getElementById('user-selection');
-        let userButtons = document.getElementsByClassName('user-selection-zone')[0];
-        let buttons = userButtons.getElementsByTagName('button');
-        for(let button of buttons) {
-        button.addEventListener("click", function() {
+    let userShape;
+    let userSelection = document.getElementById('user-selection');
+    let userButtons = document.getElementsByClassName('user-selection-zone')[0];
+    let buttons = userButtons.getElementsByTagName('button');
+    for (let button of buttons) {
+        button.addEventListener("click", function () {
             userShape = this.getAttribute("data-type");
             userSelection.textContent = userShape;
             console.log(userShape);
-        }); 
-        }
+        });
+    }
 
-        updateUserSelection();
+    updateUserSelection();
 }
 
 /**
@@ -53,7 +50,7 @@ function computerChoice() {
     let handShapes = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
     let computerShape = handShapes[Math.floor(Math.random() * 5)];
     console.log(computerShape);
-    return computerShape;    
+    return computerShape;
 }
 
 /**
@@ -75,45 +72,41 @@ function determineWinner() {
     let userSpan = document.getElementById('user-selection');
     let userAnswer = userSpan.textContent;
 
-    if(userAnswer === "?") {
+    if (userAnswer === "?") {
         alert('Please choose a shape!')
     } else {
-    console.log(`User chose: ${userAnswer}`);
-    let computerAnswer = computerChoice();
-    console.log(`Computer chose: ${computerAnswer}`)
+        console.log(`User chose: ${userAnswer}`);
+        let computerAnswer = computerChoice();
+        console.log(`Computer chose: ${computerAnswer}`)
 
-    let compSpan = document.getElementById('computer-selection');
-    compSpan.textContent = computerAnswer ;
+        let compSpan = document.getElementById('computer-selection');
+        compSpan.textContent = computerAnswer;
 
-    if (userAnswer === computerAnswer){
-        alert(`It's a draw! You both chose ${userAnswer}`);
-        incrementDraws();
-        /*incrementAll();*/
-    } else if (userAnswer === "Rock" && computerAnswer === ("Scissors" || "Lizard") ||
-    userAnswer === "Paper" && computerAnswer === ("Rock" || "Spock") ||
-    userAnswer === "Scissors" && computerAnswer === ("Paper" || "Lizard") ||
-    userAnswer === "Lizard" && computerAnswer === ("Paper" || "Spock") ||
-    userAnswer === "Spock" && computerAnswer === ("Rock" || "Scissors")) {
-    alert(`You win! ${userAnswer} defeats ${computerAnswer}`);
-    incrementWins();
-    /*incrementAll();*/
-    } else {
-        alert(`You lose! ${computerAnswer} defeats ${userAnswer}`);
-        incrementLosses();
-        /*incrementAll()*/
+        if (userAnswer === computerAnswer) {
+            alert(`It's a draw! You both chose ${userAnswer}`);
+            incrementDraws();
+        } else if (userAnswer === "Rock" && computerAnswer === ("Scissors" || "Lizard") ||
+            userAnswer === "Paper" && computerAnswer === ("Rock" || "Spock") ||
+            userAnswer === "Scissors" && computerAnswer === ("Paper" || "Lizard") ||
+            userAnswer === "Lizard" && computerAnswer === ("Paper" || "Spock") ||
+            userAnswer === "Spock" && computerAnswer === ("Rock" || "Scissors")) {
+            alert(`You win! ${userAnswer} defeats ${computerAnswer}`);
+            incrementWins();
+        } else {
+            alert(`You lose! ${computerAnswer} defeats ${userAnswer}`);
+            incrementLosses();
+        }
     }
-} hidePlay();
+    hidePlay();
 }
-
-//function checkAnswer() {}
 
 /**
  * increments user wins by 1 if victorious
  */
 function incrementWins() {
     let oldWins = parseInt(document.getElementById('wins').innerText);
-    document.getElementById('wins').innerText = ++ oldWins;
-    if(oldWins === 5) {
+    document.getElementById('wins').innerText = ++oldWins;
+    if (oldWins === 5) {
         alert("You win the first to 5!")
         location.reload();
     }
@@ -124,7 +117,7 @@ function incrementWins() {
  */
 function incrementDraws() {
     let oldDraws = parseInt(document.getElementById('draws').innerText);
-    document.getElementById('draws').innerText = ++ oldDraws;
+    document.getElementById('draws').innerText = ++oldDraws;
 }
 
 /**
@@ -132,8 +125,8 @@ function incrementDraws() {
  */
 function incrementLosses() {
     let oldLosses = parseInt(document.getElementById('losses').innerText);
-    document.getElementById('losses').innerText = ++ oldLosses;
-    if(oldLosses === 5) {
+    document.getElementById('losses').innerText = ++oldLosses;
+    if (oldLosses === 5) {
         alert("You lose the first to 5!")
         location.reload();
     }
@@ -145,7 +138,7 @@ function incrementLosses() {
  */
 function hidePlay() {
     let playButton = document.getElementsByClassName('play-button')[0];
-    playButton.style.display="none";
+    playButton.style.display = "none";
 
     let playAgainButton = document.getElementsByClassName('play-again-button')[0];
     playAgainButton.style.display = 'inline-block';
@@ -156,22 +149,12 @@ function hidePlay() {
  * displays Play button.
  */
 function resetPage() {
-        let playAgainButton = document.getElementsByClassName('play-again-button')[0];
-        playAgainButton.style.display = 'none';
+    let playAgainButton = document.getElementsByClassName('play-again-button')[0];
+    playAgainButton.style.display = 'none';
 
-        let playButton = document.getElementsByClassName('play-button')[0];
-        playButton.style.display="inline-block";
-        
-        document.getElementById('computer-selection').textContent = '?';
-        document.getElementById('user-selection').textContent = '?';
+    let playButton = document.getElementsByClassName('play-button')[0];
+    playButton.style.display = "inline-block";
+
+    document.getElementById('computer-selection').textContent = '?';
+    document.getElementById('user-selection').textContent = '?';
 }
-
-/*function incrementAll() {
-    let currentScore = parseInt(document.getElementById('losses').innerText) +
-    parseInt(document.getElementById('wins').innerText) + 
-    parseInt(document.getElementById('draws').innerText);
-    console.log(currentScore);
-    if(currentScore === 5) {
-        alert('The best of 5 is tied!');
-    }*/
-
