@@ -60,6 +60,8 @@ header a.active {
     padding: 10px;
 }
 
+/* Main game area */
+
 .game-zone {
     display: inline-block;
     height: 360px;
@@ -68,6 +70,8 @@ header a.active {
     margin-top: 120px;
     background-color: #00C59F;
 }
+
+/* User selection zone and buttons */
 
 .user-selection-zone {
     height: 100px;
@@ -128,6 +132,8 @@ header a.active {
     display: none;
 }
 
+/* Battle area (user & computer selections) */
+
 .battle-area {
     height: 150px;
     margin-top: 2%;
@@ -142,6 +148,8 @@ header a.active {
     background-color: inherit;
 }
 
+/* Score tally area */
+
 .score-tally-zone {
     width: 100%;
     height: 100px;
@@ -155,6 +163,8 @@ header a.active {
     font-size: 1.2em;
     letter-spacing: 2px;
 }
+
+/* Media queries for screens 680px wide and below */
 
 @media screen and (max-width: 680px) {
     header {
@@ -172,6 +182,8 @@ header a.active {
         height: 200px;
     }
 }
+
+/* Media queries for screens 425px wide and below */
 
 @media screen and (max-width: 425px) {
     header {

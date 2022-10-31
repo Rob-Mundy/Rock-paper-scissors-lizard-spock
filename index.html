@@ -33,7 +33,9 @@
         </nav>
     </header>
 
+    <!-- Main game area -->
     <div class="game-zone">
+        <!-- User selection area containing clickable buttons indicating user's shape of choice -->
         <div class="user-selection-zone">
             <div class="button-container">
                 <button data-type="Rock" class="user-button">
@@ -62,16 +64,19 @@
             </div>
         </div>
 
+        <!-- Battle area displays the user's & computer's hand shapes -->
         <div class="battle-area">
             <span id="user-selection"></span>
             <span>vs</span>
             <span id="computer-selection"></span>
         </div>
 
+        <!-- Button area to initiate game and reset choices when winner declared -->
         <button data-type="submit" class="play-button">Let's Play!</button>
         <button data-type="reset" class="play-again-button">Play again?</button>
     </div>
 
+    <!-- Score tally zone - first to 5 wins -->
     <div class="score-tally-zone">
         <p class="scores">Wins <span id="wins">0</span></p>
         <p class="scores">Draws <span id="draws">0</span></p>
