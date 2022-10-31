@@ -198,6 +198,7 @@ header a.active {
     .game-zone {
         font-size: .6em;
         margin-top: 120px;
+        height: 350px;
     }
 
     .user-selection-zone {
