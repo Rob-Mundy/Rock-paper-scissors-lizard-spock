@@ -180,12 +180,24 @@ header a.active {
 
     .user-selection-zone {
         height: 200px;
+        width: 70%;
+        margin-left: 15%;
     }
 }
 
-/* Media queries for screens 425px wide and below */
+/* Media queries for screens 520px wide and below */
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 520px) {
+    .user-selection-zone {
+        height: 200px;
+        width: 85%;
+        margin-left: 7.5%;
+    }
+}
+
+/* Media queries for screens 430px wide and below */
+
+@media screen and (max-width: 430px) {
     header {
         font-size: .6em;
         height: 80px;
