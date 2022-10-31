@@ -187,7 +187,7 @@ header a.active {
 
 @media screen and (max-width: 425px) {
     header {
-        font-size: .8em;
+        font-size: .6em;
     }
 
     #menu {
@@ -195,7 +195,7 @@ header a.active {
     }
 
     .game-zone {
-        font-size: .8em;
+        font-size: .6em;
     }
 
     .battle-area {
@@ -203,11 +203,11 @@ header a.active {
     }
 
     .button-container {
-        height: 60px;
-        width: 60px;
+        height: 45px;
+        width: 45px;
     }
 
     .score-tally-zone {
-        font-size: .8em;
+        font-size: .6em;
     }
 }
