@@ -20,9 +20,9 @@ As Sheldon explains, "Scissors cuts paper, paper covers rock, rock crushes lizar
 
     ![header_as_displayed_on_desktop](./assets/images/header_and_nav.png)
 
-    + The navigation section is positioned at the top of each webpage in a consistent location.
+    + The navigation section is positioned at the top of the webpage in a consistent location.
 
-    + It contains the group's name "Rock, Paper, Scissors, Lizard, Spock" in the centre, which links to the top of the home page.
+    + It contains the website's name "Rock, Paper, Scissors, Lizard, Spock" in the centre, which links to the top of the home page.
 
     + A hyperlink to an external site containing a brief history of the game as well as the rules can be found underneath the site name, "Rules (new tab)".   
 
@@ -46,9 +46,9 @@ As Sheldon explains, "Scissors cuts paper, paper covers rock, rock crushes lizar
 
     + The buttons change color to orange when the cursor hovers over them, and the aria-labels detailing the button names are displayed within the button borders giving visual cues to the user.
 
-    ![user_selection_zone_as_displayed_on_desktop](./assets/images/user_selection_aria_displayed_on_hover.png)
+        ![user_selection_zone_as_displayed_on_desktop](./assets/images/user_selection_aria_displayed_on_hover.png)
 
-    + The button borders become dotted briefly when the user makes their selection.  
+    + The button borders become dotted briefly when the user makes their selection upon clicking.  
 
 + ## The battle area
 
@@ -62,25 +62,39 @@ As Sheldon explains, "Scissors cuts paper, paper covers rock, rock crushes lizar
 
 + ## The Let's Play! button
 
-    + 
+    ![lets_play_button](./assets/images/lets_play_button.png)
+
+    + When the user has chosen their hand shape they can invoke the functions that generate the computer's choice and determine the game's outcome (win, loss, draw) by clicking the "Let's Play!" button.
+
+    + The button colors change on hover as a visual cue to the user:  
   
-    ![play_button_on_hover](./assets/images/play_button_on_hover.png)
+        ![play_button_on_hover](./assets/images/play_button_on_hover.png)
+
+    + If clicked before a shape is chosen an alert will be displayed to the user asking them to choose a shape:  
+
+        ![choose_shape_alert](./assets/images/please_choose_shape_alert.png)
+
+    + When the game is finished the result of the round is declared via an alert to the user (win, lose, draw) stating which shape was victorious:
+
+        ![result_declaration_alert](./assets/images/alert_declaring_result.png)
+
+    + The button is replaced at the end of each round with a "Play Again?" button that resets the battle area when clicked.  
+
+        ![play_again_button](./assets/images/game_outcome_and_play_again_button.png)
+    
+    + The user can also reset the battle area and Play button by selecting a new shape at the end of the round.
 
 + ## The Score tally section
 
     ![score_tally_section_as_displayed_on_desktop](./assets/images/score_tally_section.png)
 
-    + The score tally section increments user wins, losses and draws.
+    + The score tally section increments user wins, losses and draws at the end of each round.
 
     + The scores are reset when the wins or losses are equal to five.
 
     + An alert is presented to the user when 5 wins or losses have been reached.
 
-    ![first_to_five_alert](./assets/images/first_to_five_alert.png)
-
-+ ## The Footer
-  
-    + 
+        ![first_to_five_alert](./assets/images/first_to_five_alert.png)
 
 # UX Design
 
