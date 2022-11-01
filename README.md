@@ -44,7 +44,7 @@ As Sheldon explains in the Big Bang Theory, "Scissors cuts paper, paper covers r
 
     + The buttons are organised in the same order as the game's name: Rock, Paper, Scissors, Lizard, Spock.
 
-    + The buttons change color to orange when the cursor hovers over them, and the aria-labels detailing the button names are displayed within the button borders giving visual cues to the user.
+    + The buttons change color to orange when the cursor hovers over them, and the aria-labels detailing the button names are displayed within the button borders giving visual cues to the user:
 
         <img src="https://rob-mundy.github.io//Rock-paper-scissors-lizard-spock/assets/images/user_selection_aria_displayed_on_hover.png" width="500px"> 
 
@@ -52,23 +52,23 @@ As Sheldon explains in the Big Bang Theory, "Scissors cuts paper, paper covers r
 
 + ## The battle area
 
-    <img src="https://rob-mundy.github.io//Rock-paper-scissors-lizard-spock/assets/images/battle_area_populated.png" width="400px"> 
+    ![battle_area_empty](./assets/images/battle_area_populated.png)
 
     + This section displays the user and randomly-generated computer hand shapes that are to be pitted against each other.
-
+    
     +  Both will be represented by a "?" until the user makes a selection by clicking a hand shape button.
 
-    + The computer's selection only updates after the winner is declared. 
+    + The computer's selection is only displayed *after* the winner is declared. 
 
 + ## The Let's Play! button
 
-    ![lets_play_button](./assets/images/lets_play_button.png)
+    <img src="https://rob-mundy.github.io//Rock-paper-scissors-lizard-spock/assets/images/lets_play_button.png" width="150px"> 
 
     + When the user has chosen their hand shape they can invoke the functions that generate the computer's choice and determine the game's outcome (win, loss, draw) by clicking the "Let's Play!" button.
 
-    + The button colors change on hover as a visual cue to the user:  
-  
-        ![play_button_on_hover](./assets/images/play_button_on_hover.png)
+    + The button colors change on hover as a visual cue to the user that the button can be clicked. 
+
+        <img src="https://rob-mundy.github.io//Rock-paper-scissors-lizard-spock/assets/images/play_button_on_hover.png" width="150px">
 
     + If clicked before a shape is chosen an alert will be displayed to the user asking them to choose a shape:  
 
@@ -112,7 +112,7 @@ As Sheldon explains in the Big Bang Theory, "Scissors cuts paper, paper covers r
 
     + The website was designed with a desktop-first approach. 
 
-    + Media queries have been employed to re-organise the site's dividing sections on smaller screens such as tablets and mobiles, aligning and centring the content vertically to improve aesthetics and readability.
+    + Media queries have been employed to re-organise the site's header and main game sections on smaller screens such as tablets and mobiles to improve aesthetics and readability.
 
 # Testing
 
@@ -124,7 +124,7 @@ As Sheldon explains in the Big Bang Theory, "Scissors cuts paper, paper covers r
 
 + The website has been tested in Chrome's DevTools. I can confirm it is responsive, performs well, and functions on standard screen sizes down to the "Mobile S - 320px" setting.
 
-+ The navigation section, header, headings, and subheadings are all easily legible and easy to understand.
++ The navigation section, header, main game area, and score tally are all easily legible and easy to understand.
 
 + I have tested the [README.md](https://rob-mundy.github.io/Rock-paper-scissors-lizard-spock/README.md) file with the [MD Reader](https://chrome.google.com/webstore/detail/md-reader/medapdbncneneejhbgcjceippjlfkmkg) extension for Chrome.
 
@@ -132,9 +132,9 @@ As Sheldon explains in the Big Bang Theory, "Scissors cuts paper, paper covers r
 
 + An error in the JavaScript determineWinner function was found that was producing incorrect results when the user's hand shape was pitted against the second computer shape that it should have been victorious over (the OR || in the statement). 
 
-+ This was rectified by splitting the statement into two and including additional parentheses.     
++ This was rectified by splitting the statement into two and wrapping in additional parentheses.     
 
-+ While the function works as expected, the code is quite long so there must be a more elegant way to determine the game's winner.  
++ While the function works as expected, the code is quite long so there is likely a more elegant way to determine the game's winner.  
 
 + There are no outstanding bugs.
 
