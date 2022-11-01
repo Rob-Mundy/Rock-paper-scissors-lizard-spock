@@ -21,10 +21,16 @@ Website users can engage in a "first to five" game of chance against the compute
     + A hyperlink to an external site containing a brief history of the game as well as the rules can be found underneath the site name, "Rules (new tab)".   
 
     + A media query ...........:
-
-        <img src="" height="100px">
      
 + ## The game zone
+
+    ![game_area_as_displayed_on_desktop](./assets/images/game_area.png)
+
+    + The main game zone contains three distinct sections: a user-selection zone containing clickable buttons representing the 5 available hand shapes, a battle area displaying the user and computer hand shape choices, and a "Let's Play!" button that initiates the game. 
+
+    + The area is simple in its design, uncluttered and intuitive to use. 
+
++ ## The user selection zone
 
     ![user_selection_zone_as_displayed_on_desktop](./assets/images/user_selection_zone.png)
 
@@ -50,14 +56,6 @@ Website users can engage in a "first to five" game of chance against the compute
 
 + ## The Footer
   
-    + 
-
-+ # The Rules page
-
-    + This page aims to provide the user with all of the rules required to play the game.
-
-        <img src="" height="300px">
-
     + 
 
 # UX Design
