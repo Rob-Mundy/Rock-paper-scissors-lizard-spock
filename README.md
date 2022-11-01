@@ -2,7 +2,7 @@
 
 [View the live project here](https://rob-mundy.github.io/Rock-paper-scissors-lizard-spock/index.html)
 
-The Rock, Paper, Scissors, Lizard, Spock website is dedicated to the game of chance of the same name featured on The Big Bang Theory that is an extension of the original game of "Rock, Paper, Scissors".
+The Rock, Paper, Scissors, Lizard, Spock website is dedicated to the game of the same name featured on The Big Bang Theory that is an extension of the original game of "Rock, Paper, Scissors".
 
 Website users can engage in a "first to five" game of chance against the computer.
 
@@ -12,7 +12,7 @@ Website users can engage in a "first to five" game of chance against the compute
 
 <img src="https://rob-mundy.github.io//Rock-paper-scissors-lizard-spock/assets/images/outcomes_diagram.png" width="400px">
 
-As Sheldon explains in the Big Bang Theory, "Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors decapitates lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock, and as it always has, rock crushes scissors."
+As Sheldon explains in the Big Bang Theory, "Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors decapitate lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock, and as it always has, rock crushes scissors."
 
 # Features
 
@@ -74,7 +74,7 @@ As Sheldon explains in the Big Bang Theory, "Scissors cuts paper, paper covers r
 
         <img src="https://rob-mundy.github.io//Rock-paper-scissors-lizard-spock/assets/images/please_choose_shape_alert.png" width="500px"> 
 
-    + When the game is finished the result of the round is declared via an alert to the user (win, lose, draw) stating which shape was victorious:
+    + When the game has finished the result of the round is declared via an alert to the user (win, lose, draw) stating which shape was victorious:
 
         <img src="https://rob-mundy.github.io//Rock-paper-scissors-lizard-spock/assets/images/alert_declaring_result.png" width="400px">  
         
@@ -130,7 +130,7 @@ As Sheldon explains in the Big Bang Theory, "Scissors cuts paper, paper covers r
 
 # Bugs
 
-+ An error in the JavaScript determineWinner function was found that was producing incorrect results when the user's hand shape was pitted against the second commputer shape that it should have been victorious over (the OR || in the statement). 
++ An error in the JavaScript determineWinner function was found that was producing incorrect results when the user's hand shape was pitted against the second computer shape that it should have been victorious over (the OR || in the statement). 
 
 + This was rectified by splitting the statement into two and including additional parentheses.     
 
@@ -152,7 +152,7 @@ As Sheldon explains in the Big Bang Theory, "Scissors cuts paper, paper covers r
 
     + The site passed through the [JSHint](https://jshint.com/) validator with 29 warnings.
 
-    + All bar 2 of the warnings regard the compatibility of the syntax used across certain browsers, with advice on which browser versions to use.  I have chosen to ignore these as the syntax used is as taught in the syllabus.
+    + All bar 2 of the warnings relate to the compatibility of the syntax used across certain browsers, with advice on which browser versions to use.  I have chosen to ignore these as the syntax used is as taught in the syllabus.
 
     + The remaining 2 errors stated that the "Functions declared within loops referencing an outer scoped variable may lead to confusing semantics". I have chosen to ignore these as the same warnings appear when the walkthrough project "Love Maths" script is entered into the validator. 
 
@@ -174,7 +174,7 @@ As Sheldon explains in the Big Bang Theory, "Scissors cuts paper, paper covers r
 
 The site was deployed to Github Pages via the following process:
 
-+ Navigate to settings from within Whippet Walks Github project
++ Navigate to settings from within the Rock-paper-scissors-lizard-spock Github project
 
 + Select Pages from the Code and automation section
 
