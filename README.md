@@ -76,26 +76,26 @@ As Sheldon explains, "Scissors cuts paper, paper covers rock, rock crushes lizar
 
     + When the game is finished the result of the round is declared via an alert to the user (win, lose, draw) stating which shape was victorious:
 
-        ![result_declaration_alert](./assets/images/alert_declaring_result.png)
-
+        <img src="https://rob-mundy.github.io//Rock-paper-scissors-lizard-spock/assets/images/alert_declaring_result.png" width="400px">  
+        
     + The button is replaced at the end of each round with a "Play Again?" button that resets the battle area when clicked.  
-
+        
         ![play_again_button](./assets/images/game_outcome_and_play_again_button.png)
     
     + The user can also reset the battle area and Play button by selecting a new shape at the end of the round.
 
 + ## The Score tally section
 
-    ![score_tally_section_as_displayed_on_desktop](./assets/images/score_tally_section.png)
-
+    <img src="https://rob-mundy.github.io//Rock-paper-scissors-lizard-spock/assets/images/score_tally_section.png" width="400px">   
+    
     + The score tally section increments user wins, losses and draws at the end of each round.
 
     + The scores are reset when the wins or losses are equal to five.
 
     + An alert is presented to the user when 5 wins or losses have been reached.
 
-        ![first_to_five_alert](./assets/images/first_to_five_alert.png)
-
+        <img src="https://rob-mundy.github.io//Rock-paper-scissors-lizard-spock/assets/images/first_to_five_alert.png" width="400px">   
+        
 # UX Design
 
 + ## Color Palette
