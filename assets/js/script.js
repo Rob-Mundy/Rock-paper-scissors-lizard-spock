@@ -65,11 +65,11 @@ function determineWinner() {
         if (userAnswer === computerAnswer) {
             alert(`It's a draw! You both chose ${userAnswer}`);
             incrementDraws();
-        } else if (userAnswer === "Rock" && computerAnswer === ("Scissors" || "Lizard") ||
-            userAnswer === "Paper" && computerAnswer === ("Rock" || "Spock") ||
-            userAnswer === "Scissors" && computerAnswer === ("Paper" || "Lizard") ||
-            userAnswer === "Lizard" && computerAnswer === ("Paper" || "Spock") ||
-            userAnswer === "Spock" && computerAnswer === ("Rock" || "Scissors")) {
+        } else if ((userAnswer === "Rock" && ((computerAnswer === "Scissors") || (computerAnswer === "Lizard"))) ||
+            (userAnswer === "Paper" && ((computerAnswer === "Rock") || (computerAnswer === "Spock"))) ||
+            (userAnswer === "Scissors" && ((computerAnswer === "Paper") || (computerAnswer === "Lizard"))) ||
+            (userAnswer === "Lizard" && ((computerAnswer === "Paper") || (computerAnswer === "Spock"))) ||
+            (userAnswer === "Spock" && ((computerAnswer === "Rock") || (computerAnswer === "Scissors")))) {
             alert(`You win! ${userAnswer} defeats ${computerAnswer}`);
             incrementWins();
         } else {
