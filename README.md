@@ -8,6 +8,12 @@ Website users can engage in a "first to five" game of chance against the compute
 
 ![am_i_responsive_home_page_results](./assets/images/rock_paper_scissors_am_I_responsive.png)
 
++ ## Rules
+
+![outcomes_diagram](./assets/images/outcomes_diagram.png)
+
+As Sheldon explains, "Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors decapitates lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock, and as it always has, rock crushes scissors."
+
 # Features
 
 + ## Navigation
@@ -20,7 +26,7 @@ Website users can engage in a "first to five" game of chance against the compute
 
     + A hyperlink to an external site containing a brief history of the game as well as the rules can be found underneath the site name, "Rules (new tab)".   
 
-    + A media query ...........:
+    + A media query reorganises the header on smaller screens.
      
 + ## The game zone
 
@@ -34,25 +40,43 @@ Website users can engage in a "first to five" game of chance against the compute
 
     ![user_selection_zone_as_displayed_on_desktop](./assets/images/user_selection_zone.png)
 
-    + 
+    + This area contains 5 buttons representing the 5 available hand shapes for the user to select.   
 
-    + 
+    + The buttons are organised in the same order as the game's name: Rock, Paper, Scissors, Lizard, Spock.
 
-+ ## The Battle area
+    + The buttons change color to orange when the cursor hovers over them, and the aria-labels detailing the button names are displayed within the button borders giving visual cues to the user.
+
+    ![user_selection_zone_as_displayed_on_desktop](./assets/images/user_selection_aria_displayed_on_hover.png)
+
+    + The button borders become dotted briefly when the user makes their selection.  
+
++ ## The battle area
 
     ![user_selection_on_click_and_battle_aria](./assets/images/user_selection_on_click_and_battle_aria.png)
 
-    + 
+    + This section displays the user and the randomly-generated computer hand shapes that are to be pitted against each other.
 
-    +  
+    +  Both will be represented by a "?" until the user makes a selection by clicking a hand shape button.
+
+    + The computer's selection only updates after the winner is declared. 
+
++ ## The Let's Play! button
+
+    + 
+  
+    ![play_button_on_hover](./assets/images/play_button_on_hover.png)
 
 + ## The Score tally section
 
     ![score_tally_section_as_displayed_on_desktop](./assets/images/score_tally_section.png)
 
-    + 
+    + The score tally section increments user wins, losses and draws.
 
-    + 
+    + The scores are reset when the wins or losses are equal to five.
+
+    + An alert is presented to the user when 5 wins or losses have been reached.
+
+    ![first_to_five_alert](./assets/images/first_to_five_alert.png)
 
 + ## The Footer
   
@@ -69,8 +93,6 @@ Website users can engage in a "first to five" game of chance against the compute
 + ## Fonts
 
     + The font used for the company name and subsequent h1 and h2 headings, Roboto, has been chosen for its simple, contemporary style and readability.
-
-    + 
 
 + ## Media Queries
 
@@ -126,12 +148,7 @@ Website users can engage in a "first to five" game of chance against the compute
 
         Mobile (home page):  
     
-        <img src="https://rob-mundy.github.io/Rock-paper-scissors-lizard-spock/assets/images/lighthouse_mobile_score.png" width="400px">
-
-        Rules page:
-
-
-        
+        <img src="https://rob-mundy.github.io/Rock-paper-scissors-lizard-spock/assets/images/lighthouse_mobile_score.png" width="400px">       
 
 # Deployment
 
@@ -154,7 +171,3 @@ The site was deployed to Github Pages via the following process:
 + All font icons are from [fontawesome.com](https://fontawesome.com/).
 
 + The idea for displaying the user selection buttons' aria labels on hover was sourced from [russmaxdesign.github.io](https://russmaxdesign.github.io/aria-label-popover/)
-
-## Media
-
-+ 
