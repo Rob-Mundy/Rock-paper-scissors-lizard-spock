@@ -2,7 +2,7 @@
 
 [View the live project here](https://rob-mundy.github.io/Rock-paper-scissors-lizard-spock/index.html)
 
-The Rock, Paper, Scissors, Lizard, Spock website is dedicated to the game of chance of the same name featured on The Big Bang Theory that pits the user against the computer.
+The Rock, Paper, Scissors, Lizard, Spock website is dedicated to the game of chance of the same name featured on The Big Bang Theory that is an extension of the original game of "Rock, Paper, Scissors".
 
 Website users can engage in a "first to five" game of chance against the computer.
 
@@ -18,7 +18,7 @@ Website users can engage in a "first to five" game of chance against the compute
 
     + It contains the group's name "Rock, Paper, Scissors, Lizard, Spock" in the centre, which links to the top of the home page.
 
-    + Links to the site's two pages can be found underneath the site name: Play! and Rules.   
+    + A hyperlink to an external site containing a brief history of the game as well as the rules can be found underneath the site name, "Rules (new tab)".   
 
     + A media query ...........:
 
