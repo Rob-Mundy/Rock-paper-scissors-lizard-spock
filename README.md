@@ -10,15 +10,15 @@ Website users can engage in a "first to five" game of chance against the compute
 
 + ## Rules
 
-![outcomes_diagram](./assets/images/outcomes_diagram.png)
+<img src="https://rob-mundy.github.io//Rock-paper-scissors-lizard-spock/assets/images/outcomes_diagram.png" width="400px">
 
-As Sheldon explains, "Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors decapitates lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock, and as it always has, rock crushes scissors."
+As Sheldon explains in the Big Bang Theory, "Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors decapitates lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock, and as it always has, rock crushes scissors."
 
 # Features
 
 + ## Navigation
 
-    ![header_as_displayed_on_desktop](./assets/images/header_and_nav.png)
+    <img src="https://rob-mundy.github.io//Rock-paper-scissors-lizard-spock/assets/images/header_and_nav.png" width="400px"> 
 
     + The navigation section is positioned at the top of the webpage in a consistent location.
 
@@ -30,7 +30,7 @@ As Sheldon explains, "Scissors cuts paper, paper covers rock, rock crushes lizar
      
 + ## The game zone
 
-    ![game_area_as_displayed_on_desktop](./assets/images/game_area.png)
+    <img src="https://rob-mundy.github.io//Rock-paper-scissors-lizard-spock/assets/images/game_area.png" width="500px"> 
 
     + The main game zone contains three distinct sections: a user-selection zone containing clickable buttons representing the 5 available hand shapes, a battle area displaying the user and computer hand shape choices, and a "Let's Play!" button that initiates the game. 
 
@@ -38,7 +38,7 @@ As Sheldon explains, "Scissors cuts paper, paper covers rock, rock crushes lizar
 
 + ## The user selection zone
 
-    ![user_selection_zone_as_displayed_on_desktop](./assets/images/user_selection_zone.png)
+    <img src="https://rob-mundy.github.io//Rock-paper-scissors-lizard-spock/assets/images/user_selection_zone.png" width="500px"> 
 
     + This area contains 5 buttons representing the 5 available hand shapes for the user to select.   
 
@@ -46,13 +46,13 @@ As Sheldon explains, "Scissors cuts paper, paper covers rock, rock crushes lizar
 
     + The buttons change color to orange when the cursor hovers over them, and the aria-labels detailing the button names are displayed within the button borders giving visual cues to the user.
 
-        ![user_selection_zone_as_displayed_on_desktop](./assets/images/user_selection_aria_displayed_on_hover.png)
+        <img src="https://rob-mundy.github.io//Rock-paper-scissors-lizard-spock/assets/images/user_selection_aria_displayed_on_hover.png" width="500px"> 
 
     + The button borders become dotted briefly when the user makes their selection upon clicking.  
 
 + ## The battle area
 
-    ![user_selection_on_click_and_battle_aria](./assets/images/user_selection_on_click_and_battle_aria.png)
+    <img src="https://rob-mundy.github.io//Rock-paper-scissors-lizard-spock/assets/images/user_selection_on_click_and_battle_aria.png" width="500px"> 
 
     + This section displays the user and the randomly-generated computer hand shapes that are to be pitted against each other.
 
@@ -72,7 +72,7 @@ As Sheldon explains, "Scissors cuts paper, paper covers rock, rock crushes lizar
 
     + If clicked before a shape is chosen an alert will be displayed to the user asking them to choose a shape:  
 
-        ![choose_shape_alert](./assets/images/please_choose_shape_alert.png)
+        <img src="https://rob-mundy.github.io//Rock-paper-scissors-lizard-spock/assets/images/please_choose_shape_alert.png" width="500px"> 
 
     + When the game is finished the result of the round is declared via an alert to the user (win, lose, draw) stating which shape was victorious:
 
@@ -80,9 +80,9 @@ As Sheldon explains, "Scissors cuts paper, paper covers rock, rock crushes lizar
         
     + The button is replaced at the end of each round with a "Play Again?" button that resets the battle area when clicked.  
         
-        ![play_again_button](./assets/images/game_outcome_and_play_again_button.png)
-    
-    + The user can also reset the battle area and Play button by selecting a new shape at the end of the round.
+        <img src="https://rob-mundy.github.io//Rock-paper-scissors-lizard-spock/assets/images/game_outcome_and_play_again_button.png" width="150px">  
+           
+    + The user can also reset the battle area and Let's Play!/Play Again? button by selecting a new shape at the end of the round.
 
 + ## The Score tally section
 
@@ -100,13 +100,13 @@ As Sheldon explains, "Scissors cuts paper, paper covers rock, rock crushes lizar
 
 + ## Color Palette
 
-    + A suitable color palette was generated via colormind.io's AI tool, chosen for its calming, natural tones:
+    + A suitable color palette was generated via [mycolor.space](https://mycolor.space/) AI tool.
 
-        ![colormind.io_color_palette](./assets/images/.......)
+    + The highlights are complimentary to the core colors.
 
 + ## Fonts
 
-    + The font used for the company name and subsequent h1 and h2 headings, Roboto, has been chosen for its simple, contemporary style and readability.
+    + The font used throughout the site, Roboto, has been chosen for its simple, contemporary style and readability.
 
 + ## Media Queries
 
@@ -130,7 +130,11 @@ As Sheldon explains, "Scissors cuts paper, paper covers rock, rock crushes lizar
 
 # Bugs
 
-+ 
++ An error in the JavaScript determineWinner function was found that was producing incorrect results when the user's hand shape was pitted against the second commputer shape that it should have been victorious over (the OR || in the statement). 
+
++ This was rectified by splitting the statement into two and including additional parentheses.     
+
++ While the function works as expected, the code is quite long so there must be a more elegant way to determine the game's winner.  
 
 + There are no outstanding bugs.
 
