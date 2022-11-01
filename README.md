@@ -52,9 +52,9 @@ As Sheldon explains in the Big Bang Theory, "Scissors cuts paper, paper covers r
 
 + ## The battle area
 
-    <img src="https://rob-mundy.github.io//Rock-paper-scissors-lizard-spock/assets/images/user_selection_on_click_and_battle_aria.png" width="500px"> 
+    <img src="https://rob-mundy.github.io//Rock-paper-scissors-lizard-spock/assets/images/battle_area_populated.png" width="400px"> 
 
-    + This section displays the user and the randomly-generated computer hand shapes that are to be pitted against each other.
+    + This section displays the user and randomly-generated computer hand shapes that are to be pitted against each other.
 
     +  Both will be represented by a "?" until the user makes a selection by clicking a hand shape button.
 
