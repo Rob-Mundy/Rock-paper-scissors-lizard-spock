@@ -8,6 +8,8 @@ Website users can engage in a "first to five" game of chance against the compute
 
 ![am_i_responsive_home_page_results](./assets/images/rock_paper_scissors_am_I_responsive.png)
 
+The target audience will include gaming enthusiasts and fans of the The Big Bang Theory show.
+
 + ## Rules
 
 <img src="https://rob-mundy.github.io//Rock-paper-scissors-lizard-spock/assets/images/outcomes_diagram.png" width="400px">
@@ -20,7 +22,7 @@ As Sheldon explains in the Big Bang Theory, "Scissors cuts paper, paper covers r
 
     <img src="https://rob-mundy.github.io//Rock-paper-scissors-lizard-spock/assets/images/header_and_nav.png" width="400px"> 
 
-    + The navigation section is positioned at the top of the webpage in a consistent location.
+    + The navigation section is positioned at the top of the webpage in a familiar location.
 
     + It contains the website's name "Rock, Paper, Scissors, Lizard, Spock" in the centre, which links to the top of the home page.
 
@@ -56,7 +58,7 @@ As Sheldon explains in the Big Bang Theory, "Scissors cuts paper, paper covers r
 
     + This section displays the user and randomly-generated computer hand shapes that are to be pitted against each other.
     
-    +  Both will be represented by a "?" until the user makes a selection by clicking a hand shape button.
+    +  Both selections are represented by a "?" until the user makes a selection by clicking a hand shape button. This indicates to the user that their input is required.
 
     + The computer's selection is only displayed *after* the winner is declared. 
 

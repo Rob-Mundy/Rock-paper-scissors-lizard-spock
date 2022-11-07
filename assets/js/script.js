@@ -1,3 +1,6 @@
+/**
+ * Wait for page load to run game functions
+ */
 document.addEventListener("DOMContentLoaded", function () {
     resetPage();
     let buttons = document.getElementsByTagName("button");
@@ -15,6 +18,9 @@ document.addEventListener("DOMContentLoaded", function () {
     runGame();
 });
 
+/**
+ * Assigns a user shape to the battle area on click related to the button data-type
+ */
 function runGame() {
 
     let userShape;

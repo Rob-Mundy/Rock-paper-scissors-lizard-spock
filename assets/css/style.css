@@ -106,6 +106,7 @@ header a.active {
     padding: 9%;
 }
 
+/*aria-labelpopover idea sourced from https://russmaxdesign.github.io/aria-label-popover*/
 .user-button[aria-label]:hover:after {
     position: absolute;
     color: inherit;
